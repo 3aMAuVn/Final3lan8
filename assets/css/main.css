@@ -8761,10 +8761,17 @@ body.page-demo .card{max-width:780px;margin:auto;background:#fff;border-radius:1
 }
 
 
-
-/* === 2026-03-29 full screen layout on large monitors === */
+/* === 2026-03-29 strong full width override === */
 :root{
-  --site-screen-gutter: 16px;
+  --site-screen-gutter: 16px !important;
+  --site-shell-max: 100vw !important;
+  --page-shell-max: 100vw !important;
+  --site-max: 100vw !important;
+  --premium-max: 100vw !important;
+  --max: 100vw !important;
+  --site-shell-gutter: 16px !important;
+  --page-shell-gutter: 16px !important;
+  --site-gutter: 16px !important;
 }
 
 .container,
@@ -8781,20 +8788,50 @@ main > .container,
   box-sizing: border-box !important;
 }
 
-.home-demo-showcase,
-.premium-booking,
-.premium-card-grid,
-.premium-card-grid--4,
-.program-feature-hero,
-.program-feature-grid,
-.grid,
-.qr-grid{
-  max-width: none !important;
+body.page-index .hero > .container,
+body.page-index main > .container,
+body.page-index .section > .container,
+body.page-index .quicklinks,
+body.page-index details.acc,
+body.page-index details.programs-wrap,
+body.page-index .club-highlight,
+body.page-index .home-demo-showcase,
+body.page-index .policy-summary,
+body.page-index .price-tool,
+body.page-index .diff-wrap,
+body.page-index .why-grid,
+body.page-index .two-grid,
+body.page-index .grid,
+body.page-index .mini-grid{
   width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body.page-index .hero-snap{
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body.page-index .hero-snap-grid{
+  width: 100% !important;
+  max-width: none !important;
+}
+
+body.page-index .home-demo-showcase{
+  max-width: none !important;
 }
 
 @media (max-width: 700px){
   :root{
-    --site-screen-gutter: 12px;
+    --site-screen-gutter: 12px !important;
+    --site-shell-gutter: 12px !important;
+    --page-shell-gutter: 12px !important;
+    --site-gutter: 12px !important;
   }
 }
